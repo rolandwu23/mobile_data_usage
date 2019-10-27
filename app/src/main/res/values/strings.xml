@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SPH Test</string>
+    <string name="year">Year</string>
+    <string name="mobile_data_volume">Mobile Data Volume</string>
+    <string name="image_view">Is mobile data usage in subsequent quarter?</string>
+    <string name="error">"Error in loading data"</string>
 </resources>

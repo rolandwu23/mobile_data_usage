@@ -8,4 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CardElementHeadingStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textColor">#ff626262</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CardElementBodyStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textColor">#ff626262</item>
+    </style>
+
+    <style name="ImageViewStyle">
+        <item name="android:padding">10dp</item>
+    </style>
+
 </resources>
+
