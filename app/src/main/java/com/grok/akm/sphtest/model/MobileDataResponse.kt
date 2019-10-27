@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import com.grok.akm.sphtest.util.MobileDataUsageListConvert
 
 @Entity(tableName = "MobileDataResponse")
 @TypeConverters(MobileDataUsageListConvert::class)
