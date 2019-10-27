@@ -66,4 +66,7 @@ class Repository
         }
     }
 
+    /* TODO For emitting data in offline mode, follow NetworkBoundResource approach in architecture-component-samples.
+    link: https://github.com/android/architecture-components-samples/tree/master/GithubBrowserSample
+     */
 }
