@@ -1,7 +1,8 @@
-package com.grok.akm.sphtest
+package com.grok.akm.sphtest.View
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.grok.akm.sphtest.R
 
 class MainActivity : AppCompatActivity() {
 

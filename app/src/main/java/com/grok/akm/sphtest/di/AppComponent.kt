@@ -1,6 +1,6 @@
 package com.grok.akm.sphtest.di
 
-import com.grok.akm.sphtest.MainActivity
+import com.grok.akm.sphtest.View.MainActivity
 import dagger.Component
 import javax.inject.Singleton
 
