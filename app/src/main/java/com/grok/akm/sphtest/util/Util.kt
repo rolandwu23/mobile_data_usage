@@ -95,5 +95,19 @@ object Util {
         return result
     }
 
+    fun getQuarterlyUsage(list: List<MobileDataQuarterlyUsage>?, quarter:Int) : Float {
+        var quarterlyUsage = 0f;
+        if (list != null && list.isNotEmpty()) {
+
+            for (mobileDataQuarterlyUsage in list) {
+                if(getQuarterFromString(mobileDataQuarterlyUsage.quarterStr) == quarter){
+                    quarterlyUsage = mobileDataQuarterlyUsage.volume
+                }
+            }
+        }
+        return quarterlyUsage
+
+    }
+
 
 }

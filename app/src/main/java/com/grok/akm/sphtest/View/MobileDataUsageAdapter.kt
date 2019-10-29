@@ -33,13 +33,22 @@ class MobileDataUsageAdapter (private val context: Context, private val mobileDa
         val volume = mobileDataUsage?.volume.toString()
         val quarterFrom = mobileDataUsage?.from
         val quarterTo = mobileDataUsage?.to
+        val q1 = mobileDataUsage?.q1.toString()
+        val q2 = mobileDataUsage?.q2.toString()
+        val q3 = mobileDataUsage?.q3.toString()
+        val q4 = mobileDataUsage?.q4.toString()
 
         holder.tvYearValue.text = year
         holder.tvMobileDataUsageValue.text = volume
         if (mobileDataUsage?.isDecreased!!) {
             holder.imgActionImage.visibility = View.VISIBLE
-            val message = "Mobile Data Usage decreased from $quarterFrom to $quarterTo in year $year"
-            holder.imgActionImage.setOnClickListener { Toast.makeText(context,message, Toast.LENGTH_SHORT).show() }
+            val message = "Mobile Data Usage of year $year \n" +
+                    "\t\t\t\t\t Q1:\t\t $q1 \n" +
+                    "\t\t\t\t\t Q2:\t\t $q2 \n" +
+                    "\t\t\t\t\t Q3:\t\t $q3 \n" +
+                    "\t\t\t\t\t Q4:\t\t $q4 \n" +
+                    "Usage decreased from $quarterFrom to $quarterTo"
+            holder.imgActionImage.setOnClickListener { Toast.makeText(context,message, Toast.LENGTH_LONG).show() }
         } else {
             holder.imgActionImage.visibility = View.GONE
         }

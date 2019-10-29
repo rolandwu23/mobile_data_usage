@@ -106,7 +106,17 @@ class MobileDataUsageAdapterTest {
             val quarterTo = quarterFrom + 1
             val quarterFromStr = "Q$quarterFrom"
             val quarterToStr = "Q$quarterTo"
-            val mobileDataUsage = MobileDataUsage(key, Util.getVolume(value), Util.isDecreased(value),quarterFromStr,quarterToStr)
+
+            val q1 = Util.getQuarterlyUsage(value,1)
+            val q2 = Util.getQuarterlyUsage(value,2)
+            val q3 = Util.getQuarterlyUsage(value,3)
+            val q4 = Util.getQuarterlyUsage(value,4)
+            val mobileDataUsage = MobileDataUsage(key,
+                Util.getVolume(value),
+                Util.isDecreased(value),
+                q1,q2,
+                q3,q4,
+                quarterFromStr,quarterToStr)
             mobileDataUsageList.add(mobileDataUsage)
         }
         return mobileDataUsageList
